@@ -12,42 +12,51 @@
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background: #0d1117;
-    color: #e6edf3;
+    background: #1e2530;
+    color: #e8edf3;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
-  a { color: #58a6ff; text-decoration: none; }
+  a { color: #79b8ff; text-decoration: none; }
   a:hover { text-decoration: underline; }
   h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: -0.01em; }
 
   /* === Layout === */
   .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
-  section { padding: 64px 0; border-bottom: 1px solid #21262d; }
+  section { padding: 64px 0; border-bottom: 1px solid #2d3543; }
   section:last-of-type { border-bottom: none; }
   .eyebrow {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: #58a6ff;
+    color: #79b8ff;
     font-weight: 600;
     margin-bottom: 12px;
   }
   h2.section-title {
     font-size: 24px;
     margin-bottom: 32px;
-    color: #e6edf3;
+    color: #e8edf3;
   }
+  h3.subsection-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #a8b3c1;
+    margin: 32px 0 16px;
+    font-weight: 600;
+  }
+  h3.subsection-title:first-of-type { margin-top: 0; }
 
   /* === Sticky header === */
   header {
     position: sticky;
     top: 0;
     z-index: 10;
-    background: rgba(13, 17, 23, 0.85);
+    background: rgba(30, 37, 48, 0.85);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid #21262d;
+    border-bottom: 1px solid #2d3543;
   }
   header .container {
     display: flex;
@@ -59,11 +68,11 @@
   header .name { font-weight: 600; font-size: 15px; }
   header nav { display: flex; gap: 24px; }
   header nav a {
-    color: #9198a1;
+    color: #a8b3c1;
     font-size: 14px;
     transition: color 0.15s;
   }
-  header nav a:hover { color: #e6edf3; text-decoration: none; }
+  header nav a:hover { color: #e8edf3; text-decoration: none; }
 
   /* === Hero === */
   .hero { padding: 96px 0 80px; }
@@ -74,7 +83,7 @@
   }
   .hero .tagline {
     font-size: 18px;
-    color: #9198a1;
+    color: #a8b3c1;
     margin-bottom: 24px;
     max-width: 600px;
   }
@@ -89,22 +98,22 @@
     cursor: pointer;
   }
   .btn-primary {
-    background: #238636;
+    background: #2ea043;
     color: #fff;
-    border: 1px solid #2ea043;
+    border: 1px solid #3fb950;
   }
-  .btn-primary:hover { background: #2ea043; text-decoration: none; }
+  .btn-primary:hover { background: #3fb950; text-decoration: none; }
   .btn-secondary {
     background: transparent;
-    color: #e6edf3;
-    border: 1px solid #30363d;
+    color: #e8edf3;
+    border: 1px solid #3d4654;
   }
-  .btn-secondary:hover { background: #21262d; text-decoration: none; }
+  .btn-secondary:hover { background: #2a323f; text-decoration: none; }
 
   /* === About === */
   .about p {
     font-size: 16px;
-    color: #c9d1d9;
+    color: #d0d7de;
     max-width: 680px;
     margin: 0 0 16px;
   }
@@ -116,8 +125,8 @@
     gap: 16px;
   }
   .skill-card {
-    background: #161b22;
-    border: 1px solid #30363d;
+    background: #262d3a;
+    border: 1px solid #3d4654;
     border-radius: 8px;
     padding: 20px;
   }
@@ -131,33 +140,33 @@
   .skill-card .icon {
     width: 18px;
     height: 18px;
-    color: #58a6ff;
+    color: #79b8ff;
     flex-shrink: 0;
   }
   .skill-card p {
     font-size: 14px;
-    color: #9198a1;
+    color: #a8b3c1;
     margin: 0;
   }
 
   /* === Projects === */
   .projects-list { display: flex; flex-direction: column; gap: 16px; }
   .project-card {
-    background: #161b22;
-    border: 1px solid #30363d;
+    background: #262d3a;
+    border: 1px solid #3d4654;
     border-radius: 8px;
     padding: 24px;
     transition: border-color 0.15s;
   }
-  .project-card:hover { border-color: #58a6ff; }
+  .project-card:hover { border-color: #79b8ff; }
   .project-card h3 {
     font-size: 17px;
     margin-bottom: 8px;
-    color: #e6edf3;
+    color: #e8edf3;
   }
   .project-card p {
     font-size: 14px;
-    color: #c9d1d9;
+    color: #d0d7de;
     margin: 0 0 14px;
   }
   .tags { display: flex; gap: 6px; flex-wrap: wrap; }
@@ -165,10 +174,10 @@
     font-family: ui-monospace, "SF Mono", Menlo, Monaco, "Cascadia Code", monospace;
     font-size: 11px;
     padding: 3px 8px;
-    background: #1f2937;
-    color: #79c0ff;
+    background: #2d3543;
+    color: #8ec5ff;
     border-radius: 4px;
-    border: 1px solid #30363d;
+    border: 1px solid #3d4654;
   }
 
   /* === Experience === */
@@ -180,7 +189,7 @@
     top: 8px;
     bottom: 8px;
     width: 1px;
-    background: #30363d;
+    background: #3d4654;
   }
   .job { position: relative; margin-bottom: 28px; }
   .job:last-child { margin-bottom: 0; }
@@ -192,41 +201,41 @@
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background: #0d1117;
-    border: 2px solid #58a6ff;
+    background: #1e2530;
+    border: 2px solid #79b8ff;
   }
   .job h3 { font-size: 16px; margin-bottom: 2px; }
   .job .meta {
     font-size: 13px;
-    color: #9198a1;
+    color: #a8b3c1;
     margin-bottom: 10px;
   }
   .job ul {
     margin: 0;
     padding-left: 18px;
     font-size: 14px;
-    color: #c9d1d9;
+    color: #d0d7de;
   }
   .job ul li { margin-bottom: 4px; }
 
   /* === Education === */
   .edu-card {
-    background: #161b22;
-    border: 1px solid #30363d;
+    background: #262d3a;
+    border: 1px solid #3d4654;
     border-radius: 8px;
     padding: 20px 24px;
   }
   .edu-card h3 { font-size: 16px; margin-bottom: 4px; }
-  .edu-card .meta { font-size: 13px; color: #9198a1; margin-bottom: 10px; }
+  .edu-card .meta { font-size: 13px; color: #a8b3c1; margin-bottom: 10px; }
   .edu-card .coursework {
     font-size: 13px;
-    color: #c9d1d9;
+    color: #d0d7de;
   }
   .edu-card .coursework span {
     display: inline-block;
     margin-right: 8px;
     padding: 2px 8px;
-    background: #1f2937;
+    background: #2d3543;
     border-radius: 4px;
     margin-bottom: 4px;
     font-family: ui-monospace, "SF Mono", Menlo, Monaco, monospace;
@@ -234,6 +243,21 @@
   }
 
   /* === Contact === */
+  .contact-intro {
+    color: #d0d7de;
+    margin: 0 0 8px;
+    max-width: 600px;
+  }
+  .contact-interests {
+    font-size: 14px;
+    color: #a8b3c1;
+    margin: 0 0 20px;
+    max-width: 600px;
+  }
+  .contact-interests strong {
+    color: #e8edf3;
+    font-weight: 600;
+  }
   .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -241,25 +265,25 @@
     margin-top: 8px;
   }
   .contact-item {
-    background: #161b22;
-    border: 1px solid #30363d;
+    background: #262d3a;
+    border: 1px solid #3d4654;
     border-radius: 8px;
     padding: 16px;
     display: flex;
     align-items: center;
     gap: 12px;
   }
-  .contact-item .icon { width: 18px; height: 18px; color: #58a6ff; flex-shrink: 0; }
-  .contact-item .label { font-size: 12px; color: #9198a1; margin: 0; }
-  .contact-item .value { font-size: 14px; color: #e6edf3; margin: 0; word-break: break-all; }
+  .contact-item .icon { width: 18px; height: 18px; color: #79b8ff; flex-shrink: 0; }
+  .contact-item .label { font-size: 12px; color: #a8b3c1; margin: 0; }
+  .contact-item .value { font-size: 14px; color: #e8edf3; margin: 0; word-break: break-all; }
 
   /* === Footer === */
   footer {
     text-align: center;
     padding: 32px 24px;
-    color: #6e7681;
+    color: #7d8694;
     font-size: 13px;
-    border-top: 1px solid #21262d;
+    border-top: 1px solid #2d3543;
   }
 
   /* === Mobile === */
@@ -297,7 +321,7 @@
 
   <section class="hero">
     <div class="container">
-      <p class="eyebrow">Networking &amp; Systems · Lewiston, Maine</p>
+      <p class="eyebrow">Networking &amp; Systems</p>
       <h1>Mohamed Ahmed</h1>
       <p class="tagline">
         Computer Technology graduate with hands-on experience in Cisco networking, Linux systems, and process automation. Seeking entry-level networking or systems administration roles.
@@ -317,7 +341,7 @@
         I recently completed my Associate's in Computer Technology at Central Maine Community College, where I focused on networking, systems administration, and process automation. I learn by doing — most of my coursework involved hands-on labs configuring routers, troubleshooting broken networks, and writing scripts to automate routine tasks.
       </p>
       <p>
-        Outside of school, I've worked in community health outreach, customer support management, and retail operations. Those roles taught me how to communicate across different audiences, manage teams, and stay calm under pressure — skills that translate directly to IT work, where clear communication is half the job.
+        Outside of school, I've worked in community health outreach, customer support management, HR and staffing, and retail operations. Those roles taught me how to communicate across different audiences, manage teams, and stay calm under pressure — skills that translate directly to IT work, where clear communication is half the job.
       </p>
     </div>
   </section>
@@ -325,7 +349,9 @@
   <section id="skills">
     <div class="container">
       <p class="eyebrow">Skills</p>
-      <h2 class="section-title">Technical toolkit</h2>
+      <h2 class="section-title">What I bring</h2>
+
+      <h3 class="subsection-title">Technical</h3>
       <div class="skills-grid">
 
         <div class="skill-card">
@@ -358,6 +384,59 @@
             Web &amp; tools
           </h3>
           <p>HTML, CSS, JavaScript basics, Git, GitHub, database fundamentals</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 3h5a2 2 0 0 1 2 2v1h2a2 2 0 0 1 2 2v3"/><path d="M3 10v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-9"/><path d="M3 10h18"/><path d="M12 14v3"/></svg>
+            IT support
+          </h3>
+          <p>Hardware troubleshooting, device maintenance, end-user support, ticket-style problem solving</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 11v6c0 1.66 4.03 3 9 3s9-1.34 9-3v-6"/></svg>
+            Database basics
+          </h3>
+          <p>Database fundamentals from coursework, basic queries, data organization</p>
+        </div>
+
+      </div>
+
+      <h3 class="subsection-title">Operations &amp; people</h3>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            HR &amp; staffing
+          </h3>
+          <p>Hiring coordination, candidate sourcing, onboarding, billing workflows, staffing operations</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Customer support
+          </h3>
+          <p>Multi-year experience leading customer support teams, handling escalations, building service processes</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+            Youth &amp; community
+          </h3>
+          <p>Youth program coordination, community outreach, navigating health and social services, building partner relationships</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            Leadership
+          </h3>
+          <p>Team coordination, goal-focused project management, adaptive problem-solving in fast-paced environments</p>
         </div>
 
       </div>
@@ -490,8 +569,11 @@
     <div class="container">
       <p class="eyebrow">Contact</p>
       <h2 class="section-title">Get in touch</h2>
-      <p style="color: #c9d1d9; margin: 0 0 8px; max-width: 600px;">
-        Open to entry-level networking and systems administration roles in Maine or remote. The fastest way to reach me is email.
+      <p class="contact-intro">
+        Open to entry-level networking and systems administration roles. The fastest way to reach me is email.
+      </p>
+      <p class="contact-interests">
+        <strong>Currently exploring:</strong> bookkeeping as a potential next project area — interested in chatting if you have insight or opportunities there.
       </p>
       <div class="contact-grid">
 
@@ -508,14 +590,6 @@
           <div>
             <p class="label">Phone</p>
             <p class="value">(207) 440-0189</p>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <div>
-            <p class="label">Location</p>
-            <p class="value">Lewiston, Maine</p>
           </div>
         </div>
 
